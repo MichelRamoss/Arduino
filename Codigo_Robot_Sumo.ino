@@ -1,4 +1,4 @@
-#include <AFMotor.h> //libreria para tarjeta azul
+#include <AFMotor.h> //libreria para controlador de motores
 long distancia; // variable sensor ultrasonico
 long tiempo;    //variable sensor ultrasonico
 AF_DCMotor motor3(3);//habilitar salida motor 3 
@@ -18,7 +18,6 @@ void setup()
      
 void loop()
 {
-  
      digitalWrite(10,LOW); // Por cuestión de estabilización del sensor
      delayMicroseconds(5);//esperar 5 microsegundos
      digitalWrite(10, HIGH); // envío del pulso para disparo del ultrasónico
@@ -72,6 +71,4 @@ void loop()
       motor3.run(BACKWARD); //motor 3 atras
       delay (1000);//espera 1 segundo
   }       
-     
-    
 }

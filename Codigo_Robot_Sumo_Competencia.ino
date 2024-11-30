@@ -1,9 +1,9 @@
 //Codigo Final de minisumo
 //Talent Land 2018
 
-#include <AFMotor.h> //libreria para tarjeta azul
-#define Pulsador 16 //Go
-#define Pulsador2 17 //Go
+#include <AFMotor.h> //libreria para controlador de motores
+#define Pulsador 16 // Habilitar puerto 16 para modulo de arranque
+#define Pulsador2 17 // Habilitar puerto 16 para sensor de arranque
 
 
 long distancia; // variable sensor ultrasonico
@@ -48,7 +48,7 @@ void loop() {
   {       
        motor3.setSpeed(255); //motor 3 adelante
        motor3.run(FORWARD);  //motor 3 adelante
-       motor4.setSpeed(255); //motor 4 adelanteo  qqo
+       motor4.setSpeed(255); //motor 4 adelanteo
        motor4.run(FORWARD);  //motor 4 adelante
      delay (100);//espera 3 segundos
         Serial.print(distancia);
@@ -60,7 +60,7 @@ void loop() {
        motor4.run(BACKWARD);  //motor 3 adelante
     // delay (3000);//espera 3 segundos
    
-       Serial.print(distancia);
+         Serial.print(distancia);
          Serial.println("cm");
    
     if((!digitalRead(14)))//si el sensor inferior derecha detecta 
