@@ -1,6 +1,6 @@
 //Proyecto Final
 //Michel A Ramos Soto 
-//Diplomado 2021 //192.168.1.78
+//Diplomado 2021 //192.168.1.78 //Revisado 2025
 
 #include <DHT.h>
 #include <WiFi.h>
