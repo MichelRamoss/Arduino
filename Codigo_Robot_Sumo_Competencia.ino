@@ -1,5 +1,5 @@
 //Codigo Final de minisumo
-//Talent Land 2018
+//Talent Land 2018 //Revisado 2025
 
 #include <AFMotor.h> //libreria para controlador de motores
 #define Pulsador 16 // Habilitar puerto 16 para modulo de arranque
